@@ -1,0 +1,301 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-19T18:40:02.131Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7425000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Navigating Fleet --- Vehicles",
+        "description": "",
+        "id": "navigation-menu;navigating-fleet-----vehicles",
+        "after": [
+          {
+            "result": {
+              "duration": 34000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 524000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user enters the sales manager information",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_sales_manager_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user navigates to Fleet, Vehicles",
+            "match": {
+              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_user_navigates_to_Fleet_Vehicles()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the title should be vehicles",
+            "match": {
+              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_title_should_be_vehicles()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@navigate"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-19T18:40:02.162Z",
+        "before": [
+          {
+            "result": {
+              "duration": 198000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 146000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setUpDb()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Navigating Marketing --- Campaigns",
+        "description": "",
+        "id": "navigation-menu;navigating-marketing-----campaigns",
+        "after": [
+          {
+            "result": {
+              "duration": 92000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDownDb()"
+            }
+          },
+          {
+            "result": {
+              "duration": 57000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 138000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 100000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user enters the sales manager information",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_sales_manager_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 162000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user navigates to Marketing, Campaigns",
+            "match": {
+              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_user_navigates_to_Marketing_Campaigns()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 133000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the title should be Campaigns",
+            "match": {
+              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_title_should_be_Campaigns()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@navigate"
+          },
+          {
+            "name": "@db"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-19T18:40:02.170Z",
+        "before": [
+          {
+            "result": {
+              "duration": 120000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Navigating Activities --- Calendar Events",
+        "description": "",
+        "id": "navigation-menu;navigating-activities-----calendar-events",
+        "after": [
+          {
+            "result": {
+              "duration": 65000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 95000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 65000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user enters the sales manager information",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_sales_manager_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user navigates to Activities, Calendar Events",
+            "match": {
+              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_user_navigates_to_Activities_Calendar_Events()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the title should be Calendar Events",
+            "match": {
+              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_title_should_be_Calendar_Events()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@navigate"
+          }
+        ]
+      }
+    ],
+    "name": "Navigation Menu",
+    "description": "",
+    "id": "navigation-menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/NavigationMenu.feature",
+    "tags": [
+      {
+        "name": "@navigate",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
