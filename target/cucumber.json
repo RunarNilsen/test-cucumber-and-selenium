@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-07-19T18:40:02.131Z",
+        "start_timestamp": "2021-07-20T13:16:06.446Z",
         "before": [
           {
             "result": {
-              "duration": 7425000,
+              "duration": 2264000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "Navigating Fleet --- Vehicles",
+        "line": 18,
+        "name": "Menu Options",
         "description": "",
-        "id": "navigation-menu;navigating-fleet-----vehicles",
+        "id": "contacts-page;menu-options",
         "after": [
           {
             "result": {
-              "duration": 34000,
+              "duration": 490426000,
               "status": "passed"
             },
             "match": {
@@ -35,267 +35,69 @@
         "steps": [
           {
             "result": {
-              "duration": 524000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 68000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user enters the sales manager information",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_sales_manager_information()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 75000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user navigates to Fleet, Vehicles",
-            "match": {
-              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_user_navigates_to_Fleet_Vehicles()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 32000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the title should be vehicles",
-            "match": {
-              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_title_should_be_vehicles()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@navigate"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-07-19T18:40:02.162Z",
-        "before": [
-          {
-            "result": {
-              "duration": 198000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.setUp()"
-            }
-          },
-          {
-            "result": {
-              "duration": 146000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.setUpDb()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "Navigating Marketing --- Campaigns",
-        "description": "",
-        "id": "navigation-menu;navigating-marketing-----campaigns",
-        "after": [
-          {
-            "result": {
-              "duration": 92000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.tearDownDb()"
-            }
-          },
-          {
-            "result": {
-              "duration": 57000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 138000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 100000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the user enters the sales manager information",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_sales_manager_information()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 162000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "the user navigates to Marketing, Campaigns",
-            "match": {
-              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_user_navigates_to_Marketing_Campaigns()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 133000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the title should be Campaigns",
-            "match": {
-              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_title_should_be_Campaigns()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@navigate"
-          },
-          {
-            "name": "@db"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-07-19T18:40:02.170Z",
-        "before": [
-          {
-            "result": {
-              "duration": 120000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "Navigating Activities --- Calendar Events",
-        "description": "",
-        "id": "navigation-menu;navigating-activities-----calendar-events",
-        "after": [
-          {
-            "result": {
-              "duration": 65000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 95000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 65000,
+              "duration": 12460807000,
               "status": "passed"
             },
             "line": 19,
-            "name": "the user enters the sales manager information",
+            "name": "the user logged in as \"driver\"",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_sales_manager_information()"
+              "arguments": [
+                {
+                  "val": "\"driver\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 116000,
+              "duration": 2134342000,
               "status": "passed"
             },
             "line": 20,
-            "name": "the user navigates to Activities, Calendar Events",
+            "name": "the user should see following options",
             "match": {
-              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_user_navigates_to_Activities_Calendar_Events()"
+              "location": "com.vytrack.step_definitions.ContactsStepDefs.the_user_should_see_following_options(java.util.List\u003cjava.lang.String\u003e)"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 68000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the title should be Calendar Events",
-            "match": {
-              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_title_should_be_Calendar_Events()"
-            },
+            "rows": [
+              {
+                "cells": [
+                  "Fleet"
+                ]
+              },
+              {
+                "cells": [
+                  "Customers"
+                ]
+              },
+              {
+                "cells": [
+                  "Activities"
+                ]
+              },
+              {
+                "cells": [
+                  "System"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@navigate"
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "Navigation Menu",
+    "name": "Contacts page",
     "description": "",
-    "id": "navigation-menu",
+    "id": "contacts-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/NavigationMenu.feature",
-    "tags": [
-      {
-        "name": "@navigate",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/Contacts.feature",
+    "tags": []
   }
 ]

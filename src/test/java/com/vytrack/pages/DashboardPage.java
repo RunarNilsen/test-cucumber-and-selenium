@@ -1,4 +1,4 @@
-package com.cybertek.pages;
+package com.vytrack.pages;
 
 public class DashboardPage extends BasePage{
 

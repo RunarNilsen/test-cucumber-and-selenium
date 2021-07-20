@@ -1,7 +1,7 @@
-package com.cybertek.pages;
+package com.vytrack.pages;
 
-import com.cybertek.utilities.BrowserUtils;
-import com.cybertek.utilities.Driver;
+import com.vytrack.utilities.BrowserUtils;
+import com.vytrack.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -10,6 +10,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.awt.event.WindowStateListener;
+import java.util.List;
 
 public abstract class BasePage {
     /* This class is an abstract class. That's why we cannot create object from this class and we cannot initialize the class.
@@ -23,6 +26,9 @@ public abstract class BasePage {
     @FindBy(css = "div[class='loader-mask shown']")
     @CacheLookup
     protected WebElement loaderMask;
+
+    @FindBy(css = "span.title.title-level-1")
+    public List<WebElement> menuOptions;
 
     @FindBy(css = "h1[class='oro-subtitle']")
     public WebElement pageSubTitle;
