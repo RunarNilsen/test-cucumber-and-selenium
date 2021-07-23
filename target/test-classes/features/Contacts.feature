@@ -12,9 +12,9 @@ Feature: Contacts page
     Given the user is on the login page
     And the user enters the sales manager information
     When the user navigates to "Activities" "Calendar Events"
-    Then the tittle contains "Calendar"
+    Then the tittle contains "Calendars"
 
-  @wip
+
   Scenario: Menu Options
     Given the user logged in as "driver"
     Then the user should see following options
@@ -22,6 +22,28 @@ Feature: Contacts page
           |  Customers |
           |  Activities|
           |  System    |
+
+  Scenario: Menu Options
+    Given the user logged in as "salesmanager"
+    Then the user should see following options
+      |  Dashboards             |
+      |  Fleet                  |
+      |  Customers              |
+      |  Sales                  |
+      |  Activities             |
+      |  Marketing              |
+      |  Reports & Segments     |
+      |  System                 |
+
+
+  Scenario: Login as a given driver
+    Given the user is on the login page
+    When the user logs in using following credentials
+      |  username     |user10      |
+      |  password     |UserUser123 |
+      |  firstname    |Toney     |
+      |  lastname     |Hegmann   |
+    Then the user should be able to login
 
 
 

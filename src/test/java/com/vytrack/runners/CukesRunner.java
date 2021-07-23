@@ -9,7 +9,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         // creating cucumber.json file THAT will be used to create a report.
-        plugin={"json:target/cucumber.json"},
+        plugin={"json:target/cucumber.json",
+                "html:target/default-html-reports",
+                "rerun:target/rerun.txt"},
         // writing feature files location to connect feature files with CukesRunner class
         features = "src/test/resources/features",
         glue = "com/vytrack/step_definitions",  // glue connects step_definitons with CukesRunner class

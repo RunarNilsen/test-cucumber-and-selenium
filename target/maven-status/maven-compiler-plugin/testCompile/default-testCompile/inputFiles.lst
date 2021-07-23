@@ -3,6 +3,7 @@
 /Users/muhammet/Desktop/CybertekKendiCalismam/EU3CucumberSelenium/src/test/java/com/vytrack/utilities/BrowserUtils.java
 /Users/muhammet/Desktop/CybertekKendiCalismam/EU3CucumberSelenium/src/test/java/com/vytrack/pages/ContactsPage.java
 /Users/muhammet/Desktop/CybertekKendiCalismam/EU3CucumberSelenium/src/test/java/com/vytrack/pages/LoginPage.java
+/Users/muhammet/Desktop/CybertekKendiCalismam/EU3CucumberSelenium/src/test/java/com/vytrack/step_definitions/ContactsStepDefs.java
 /Users/muhammet/Desktop/CybertekKendiCalismam/EU3CucumberSelenium/src/test/java/com/vytrack/utilities/ConfigurationReader.java
 /Users/muhammet/Desktop/CybertekKendiCalismam/EU3CucumberSelenium/src/test/java/com/vytrack/step_definitions/LoginStepDefs.java
 /Users/muhammet/Desktop/CybertekKendiCalismam/EU3CucumberSelenium/src/test/java/com/vytrack/pages/BasePage.java
@@ -12,3 +13,4 @@
 /Users/muhammet/Desktop/CybertekKendiCalismam/EU3CucumberSelenium/src/test/java/com/vytrack/step_definitions/NavigationMenuStepDefs.java
 /Users/muhammet/Desktop/CybertekKendiCalismam/EU3CucumberSelenium/src/test/java/com/vytrack/pages/ContactInfoPage.java
 /Users/muhammet/Desktop/CybertekKendiCalismam/EU3CucumberSelenium/src/test/java/com/vytrack/pages/CreateCalendarEventsPage.java
+/Users/muhammet/Desktop/CybertekKendiCalismam/EU3CucumberSelenium/src/test/java/com/vytrack/runners/FailedTestRunner.java
