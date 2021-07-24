@@ -81,6 +81,7 @@ public class DriverWithSingletonAndParallelAndRemote {
                     try {
                         driverPool.set(new RemoteWebDriver(new URL("http://3.238.26.132:4444/wd/hub"), chromeOptions));
                     } catch (MalformedURLException e) {
+
                         e.printStackTrace();
                     }
             }
