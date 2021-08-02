@@ -17,7 +17,7 @@ public class ContactsPage extends BasePage{
 
     // create a method to get email dynamically
     public WebElement getContactEmail(String email){
-        String xpath="//td[@data-column-label='Email'][contains(text(), '"+ email +"')]"; // write email dynamically
+        String xpath="//*[contains(text(), '"+ email +"') and @data-column-label='Email']"; // write email dynamically
         return Driver.get().findElement(By.xpath(xpath));
     }
 
