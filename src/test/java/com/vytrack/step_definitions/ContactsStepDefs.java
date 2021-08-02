@@ -80,13 +80,46 @@ public class ContactsStepDefs {
         System.out.println("expectedPhone = " + expectedPhone);
 
 
-        // Assertion
+        // Assertion, Compare UI against the DB
         Assert.assertEquals("Verify full name: ",expectedFullName,actualFullName);
         Assert.assertEquals("Verify email: ",expectedEmail,actualEmail);
         Assert.assertEquals("Verify phone: ",expectedPhone,actualPhone);
 
 
 
+    }
+
+    @Then("the information for {string} should be same with database")
+    public void the_information_for_should_be_same_with_database(String email) {
+        // get information from UI (website)
+        ContactInfoPage contactInfoPage = new ContactInfoPage();
+        String actualFullName = contactInfoPage.fullName.getText();
+        String actualEmail = contactInfoPage.email.getText();
+        String actualPhone = contactInfoPage.phone.getText();
+
+        System.out.println("actualFullName = " + actualFullName);
+        System.out.println("actualEmail = " + actualEmail);
+        System.out.println("actualPhone = " + actualPhone);
+        // get information from database
+        String sqlQuery = "select concat(first_name,' ',last_name) as \"full_name\", E.email, phone\n" +
+                "from orocrm_contact C join orocrm_contact_email E \n" +
+                "on C.id = E.owner_id \n" +
+                "join orocrm_contact_phone P\n" +
+                "on E.owner_id = P.owner_id \n" +
+                "where E.email='" +email+ "';";
+        Map<String, Object> rowMap = DBUtils.getRowMap(sqlQuery);// for one row, we use a Map
+        String expectedFullName = (String) rowMap.get("full_name");
+        String expectedPhone = (String) rowMap.get("phone");
+        String expectedEmail = (String) rowMap.get("email");
+        System.out.println("expectedFullName = " + expectedFullName);
+        System.out.println("expectedEmail = " + expectedEmail);
+        System.out.println("expectedPhone = " + expectedPhone);
+
+
+        // Assertion, Compare UI against the DB
+        Assert.assertEquals("Verify full name: ",expectedFullName,actualFullName);
+        Assert.assertEquals("Verify email: ",expectedEmail,actualEmail);
+        Assert.assertEquals("Verify phone: ",expectedPhone,actualPhone);
     }
 
 

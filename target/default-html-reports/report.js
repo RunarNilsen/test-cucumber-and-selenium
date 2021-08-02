@@ -4,10 +4,61 @@ formatter.feature({
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "Contacts test with email",
+formatter.scenarioOutline({
+  "name": "Contacts test with list of emails",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    },
+    {
+      "name": "@db"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user logged in as \"salesmanager\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "the user navigates to \"Customers\" \"Contacts\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "the user clicks the \"\u003cEmail\u003e\" from contacts",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "the information for \"\u003cEmail\u003e\" should be same with database",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "Email"
+      ]
+    },
+    {
+      "cells": [
+        "mbrackstone9@example.com"
+      ]
+    },
+    {
+      "cells": [
+        "mike.jorden@hotmail.com"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Contacts test with list of emails",
+  "description": "",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@wip"
@@ -54,11 +105,76 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the information should be same with database",
+  "name": "the information for \"mbrackstone9@example.com\" should be same with database",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.vytrack.step_definitions.ContactsStepDefs.the_information_should_be_same_with_database()"
+  "location": "com.vytrack.step_definitions.ContactsStepDefs.the_information_for_should_be_same_with_database(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Contacts test with list of emails",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    },
+    {
+      "name": "@db"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user logged in as \"salesmanager\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user navigates to \"Customers\" \"Contacts\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_user_navigates_to(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks the \"mike.jorden@hotmail.com\" from contacts",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.ContactsStepDefs.the_user_clicks_the_from_contacts(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the information for \"mike.jorden@hotmail.com\" should be same with database",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.vytrack.step_definitions.ContactsStepDefs.the_information_for_should_be_same_with_database(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
