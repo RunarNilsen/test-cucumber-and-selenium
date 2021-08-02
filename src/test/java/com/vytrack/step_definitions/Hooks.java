@@ -1,5 +1,6 @@
 package com.vytrack.step_definitions;
 
+import com.vytrack.utilities.DBUtils;
 import com.vytrack.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -10,7 +11,7 @@ import org.openqa.selenium.TakesScreenshot;
 import java.util.concurrent.TimeUnit;
 
 public class Hooks {
-    // @Before runs before every single scenario and @After runs adter every single scenario
+    // @Before runs before every single scenario and @After runs after every single scenario
 
 
     // @Before annotation comes from Cucumber not JUnit
@@ -39,12 +40,15 @@ public class Hooks {
 
     @Before("@db")
     public void setUpDb(){
-        System.out.println("\tConnecting to database");
+        DBUtils.createConnection();  // create connection
+        System.out.println("Connecting to the database...");
     }
 
     @After("@db")
     public void tearDownDb(){
-        System.out.println("\tDisconnecting database");
+        // Close database connection
+        DBUtils.destroy();
+        System.out.println("Disconnecting the database...");
     }
 
 
