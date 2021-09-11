@@ -3,44 +3,26 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-02T17:42:47.751Z",
+        "start_timestamp": "2021-09-11T16:42:23.326Z",
         "before": [
           {
             "result": {
-              "duration": 8567828000,
+              "duration": 2094352300,
               "status": "passed"
             },
             "match": {
               "location": "com.vytrack.step_definitions.Hooks.setUp()"
             }
-          },
-          {
-            "result": {
-              "duration": 2441136000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.setUpDb()"
-            }
           }
         ],
-        "line": 70,
-        "name": "Contacts test with list of emails",
+        "line": 4,
+        "name": "Driver user",
         "description": "",
-        "id": "contacts-page;contacts-test-with-list-of-emails;;2",
+        "id": "account-types;driver-user",
         "after": [
           {
             "result": {
-              "duration": 12516000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.tearDownDb()"
-            }
-          },
-          {
-            "result": {
-              "duration": 722670000,
+              "duration": 664827000,
               "status": "passed"
             },
             "match": {
@@ -49,19 +31,19 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8078355000,
+              "duration": 6669566200,
               "status": "passed"
             },
-            "line": 64,
-            "name": "the user logged in as \"salesmanager\"",
+            "line": 5,
+            "name": "the user logged in as \"driver\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"salesmanager\"",
+                  "val": "\"driver\"",
                   "offset": 22
                 }
               ],
@@ -71,111 +53,72 @@
           },
           {
             "result": {
-              "duration": 4648033000,
+              "duration": 697749700,
               "status": "passed"
             },
-            "line": 65,
-            "name": "the user navigates to \"Customers\" \"Contacts\"",
+            "line": 6,
+            "name": "the user navigates to \"Activities\" \"Calendar Events\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Customers\"",
+                  "val": "\"Activities\"",
                   "offset": 22
                 },
                 {
-                  "val": "\"Contacts\"",
-                  "offset": 34
+                  "val": "\"Calendar Events\"",
+                  "offset": 35
                 }
               ],
               "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_user_navigates_to(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4270893000,
-              "status": "passed"
-            },
-            "line": 66,
-            "name": "the user clicks the \"mbrackstone9@example.com\" from contacts",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"mbrackstone9@example.com\"",
-                  "offset": 20
-                }
-              ],
-              "location": "com.vytrack.step_definitions.ContactsStepDefs.the_user_clicks_the_from_contacts(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2675381000,
+              "duration": 2020708900,
               "status": "passed"
             },
-            "line": 67,
-            "name": "the information for \"mbrackstone9@example.com\" should be same with database",
+            "line": 7,
+            "name": "the tittle contains \"Calendar Events - Activities\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"mbrackstone9@example.com\"",
+                  "val": "\"Calendar Events - Activities\"",
                   "offset": 20
                 }
               ],
-              "location": "com.vytrack.step_definitions.ContactsStepDefs.the_information_for_should_be_same_with_database(java.lang.String)"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_tittle_contains(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
-          },
-          {
-            "name": "@db"
+            "name": "@smoke"
           }
         ]
       },
       {
-        "start_timestamp": "2021-08-02T17:43:19.844Z",
+        "start_timestamp": "2021-09-11T16:42:35.487Z",
         "before": [
           {
             "result": {
-              "duration": 2693963000,
+              "duration": 1225888600,
               "status": "passed"
             },
             "match": {
               "location": "com.vytrack.step_definitions.Hooks.setUp()"
             }
-          },
-          {
-            "result": {
-              "duration": 733098000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.setUpDb()"
-            }
           }
         ],
-        "line": 71,
-        "name": "Contacts test with list of emails",
+        "line": 16,
+        "name": "Store manager user",
         "description": "",
-        "id": "contacts-page;contacts-test-with-list-of-emails;;3",
+        "id": "account-types;store-manager-user",
         "after": [
           {
             "result": {
-              "duration": 1724000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.vytrack.step_definitions.Hooks.tearDownDb()"
-            }
-          },
-          {
-            "result": {
-              "duration": 729846000,
+              "duration": 781141100,
               "status": "passed"
             },
             "match": {
@@ -184,19 +127,19 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8423829000,
+              "duration": 7631592200,
               "status": "passed"
             },
-            "line": 64,
-            "name": "the user logged in as \"salesmanager\"",
+            "line": 17,
+            "name": "the user logged in as \"storemanager\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"salesmanager\"",
+                  "val": "\"storemanager\"",
                   "offset": 22
                 }
               ],
@@ -206,10 +149,10 @@
           },
           {
             "result": {
-              "duration": 5001470000,
+              "duration": 747584800,
               "status": "passed"
             },
-            "line": 65,
+            "line": 18,
             "name": "the user navigates to \"Customers\" \"Contacts\"",
             "match": {
               "arguments": [
@@ -224,60 +167,649 @@
               ],
               "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.the_user_navigates_to(java.lang.String,java.lang.String)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4200205000,
-              "status": "passed"
-            },
-            "line": 66,
-            "name": "the user clicks the \"mike.jorden@hotmail.com\" from contacts",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"mike.jorden@hotmail.com\"",
-                  "offset": 20
-                }
-              ],
-              "location": "com.vytrack.step_definitions.ContactsStepDefs.the_user_clicks_the_from_contacts(java.lang.String)"
-            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2494116000,
+              "duration": 2022210200,
               "status": "passed"
             },
-            "line": 67,
-            "name": "the information for \"mike.jorden@hotmail.com\" should be same with database",
+            "line": 19,
+            "name": "the tittle contains \"Contacts - Customers\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"mike.jorden@hotmail.com\"",
+                  "val": "\"Contacts - Customers\"",
                   "offset": 20
                 }
               ],
-              "location": "com.vytrack.step_definitions.ContactsStepDefs.the_information_for_should_be_same_with_database(java.lang.String)"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_tittle_contains(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
-          },
-          {
-            "name": "@db"
+            "name": "@smoke"
           }
         ]
       }
     ],
-    "name": "Contacts page",
+    "name": "Account types",
     "description": "",
-    "id": "contacts-page",
+    "id": "account-types",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Contacts.feature",
+    "uri": "file:src/test/resources/features/AccountTypes.feature",
     "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3279934400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-11T16:42:23.326Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2094352300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Login as a driver",
+        "description": "",
+        "id": "users-should-be-able-to-login;login-as-a-driver",
+        "after": [
+          {
+            "result": {
+              "duration": 660650600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3177029000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user enters the driver information",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_driver_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13446400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "#"
+          },
+          {
+            "name": "it"
+          },
+          {
+            "name": "will"
+          },
+          {
+            "name": "assign"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "to"
+          },
+          {
+            "name": "all"
+          },
+          {
+            "name": "scenario.So"
+          },
+          {
+            "name": "we"
+          },
+          {
+            "name": "can"
+          },
+          {
+            "name": "run"
+          },
+          {
+            "name": "all"
+          },
+          {
+            "name": "scenarios"
+          },
+          {
+            "name": "by"
+          },
+          {
+            "name": "using"
+          },
+          {
+            "name": "tags"
+          },
+          {
+            "name": "\u003d"
+          },
+          {
+            "name": "\"@login\""
+          },
+          {
+            "name": "@driver"
+          },
+          {
+            "name": "@VYT-123"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2801136500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-11T16:42:32.565Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1236878700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Login as a sales manager",
+        "description": "",
+        "id": "users-should-be-able-to-login;login-as-a-sales-manager",
+        "after": [
+          {
+            "result": {
+              "duration": 696906700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4891593600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user enters the sales manager information",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_sales_manager_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8978900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "#"
+          },
+          {
+            "name": "it"
+          },
+          {
+            "name": "will"
+          },
+          {
+            "name": "assign"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "to"
+          },
+          {
+            "name": "all"
+          },
+          {
+            "name": "scenario.So"
+          },
+          {
+            "name": "we"
+          },
+          {
+            "name": "can"
+          },
+          {
+            "name": "run"
+          },
+          {
+            "name": "all"
+          },
+          {
+            "name": "scenarios"
+          },
+          {
+            "name": "by"
+          },
+          {
+            "name": "using"
+          },
+          {
+            "name": "tags"
+          },
+          {
+            "name": "\u003d"
+          },
+          {
+            "name": "\"@login\""
+          },
+          {
+            "name": "@sales_manager"
+          },
+          {
+            "name": "@VYT-123"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3135776800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-11T16:42:42.203Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1194628900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Login as a store manager",
+        "description": "",
+        "id": "users-should-be-able-to-login;login-as-a-store-manager",
+        "after": [
+          {
+            "result": {
+              "duration": 779285200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4737134400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user enters the store manager information",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_store_manager_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8977600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "#"
+          },
+          {
+            "name": "it"
+          },
+          {
+            "name": "will"
+          },
+          {
+            "name": "assign"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "to"
+          },
+          {
+            "name": "all"
+          },
+          {
+            "name": "scenario.So"
+          },
+          {
+            "name": "we"
+          },
+          {
+            "name": "can"
+          },
+          {
+            "name": "run"
+          },
+          {
+            "name": "all"
+          },
+          {
+            "name": "scenarios"
+          },
+          {
+            "name": "by"
+          },
+          {
+            "name": "using"
+          },
+          {
+            "name": "tags"
+          },
+          {
+            "name": "\u003d"
+          },
+          {
+            "name": "\"@login\""
+          },
+          {
+            "name": "@store_manager"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Users should be able to login",
+    "description": "",
+    "id": "users-should-be-able-to-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      },
+      {
+        "name": "#",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 15
+        }
+      },
+      {
+        "name": "it",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 17
+        }
+      },
+      {
+        "name": "will",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 20
+        }
+      },
+      {
+        "name": "assign",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 25
+        }
+      },
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 32
+        }
+      },
+      {
+        "name": "to",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 39
+        }
+      },
+      {
+        "name": "all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 42
+        }
+      },
+      {
+        "name": "scenario.So",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 46
+        }
+      },
+      {
+        "name": "we",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 58
+        }
+      },
+      {
+        "name": "can",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 61
+        }
+      },
+      {
+        "name": "run",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 65
+        }
+      },
+      {
+        "name": "all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 69
+        }
+      },
+      {
+        "name": "scenarios",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 73
+        }
+      },
+      {
+        "name": "by",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 83
+        }
+      },
+      {
+        "name": "using",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 86
+        }
+      },
+      {
+        "name": "tags",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 92
+        }
+      },
+      {
+        "name": "\u003d",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 97
+        }
+      },
+      {
+        "name": "\"@login\"",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 99
+        }
+      }
+    ]
   }
 ]

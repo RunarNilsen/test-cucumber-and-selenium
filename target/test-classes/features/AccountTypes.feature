@@ -1,6 +1,6 @@
 Feature: Account types
 
-
+  @smoke
   Scenario: Driver user
     Given the user logged in as "driver"
     When the user navigates to "Activities" "Calendar Events"
@@ -12,7 +12,7 @@ Feature: Account types
     When the user navigates to "Customers" "Accounts"
     Then the tittle contains "Accounts - CustomerS"
 
-
+  @smoke
   Scenario: Store manager user
     Given the user logged in as "storemanager"
     When the user navigates to "Customers" "Contacts"

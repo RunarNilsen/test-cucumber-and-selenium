@@ -1,4 +1,4 @@
-@login # it will assign @login to all scenario.So we can run all scenarios by using tags = "@login"
+@login @smoke # it will assign @login to all scenario.So we can run all scenarios by using tags = "@login"
 Feature: Users should be able to login
 
   # it implements the codes at the beginning of each different scenario

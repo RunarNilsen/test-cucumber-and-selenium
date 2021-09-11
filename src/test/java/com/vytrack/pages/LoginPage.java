@@ -5,9 +5,8 @@ import com.vytrack.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.junit.Assert;
 
-public class LoginPage {
+public class LoginPage extends  BasePage{
 
     // converting this class to the page object model
     public LoginPage(){
@@ -40,6 +39,7 @@ public class LoginPage {
         usernameInput.sendKeys(username);
         passwordInput.sendKeys(password);
         loginButton.click(); // clicking the login button
+        waitUntilLoaderScreenDisappear();
 
     }
 
